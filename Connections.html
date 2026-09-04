@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Connect — Connections</title>
+
+  <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a href="index.html" class="logo">
+      Connect
+    </a>
+
+    <div class="nav-links">
+
+      <a href="connections.html" class="active">
+        Connections
+      </a>
+
+      <a href="recommendations.html">
+        Recommendations
+      </a>
+
+      <a href="search.html">
+        Search
+      </a>
+
+      <a href="profile.html">
+
+        <img
+          class="profile-icon"
+          src="https://i.pinimg.com/originals/4c/8c/e5/4c8ce5524ce24545a4be893ed27d4e84.jpg?nii=t"
+          alt="Your profile">
+
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container">
+
+    <div class="page-title">
+
+      <h1>Your Connections</h1>
+
+      <p>
+        People you've connected with.
+      </p>
+
+    </div>
+
+
+    <div class="connections-grid">
+
+
+      <!-- CONNECTION 1 -->
+
+      <div class="connection-card">
+
+        <img
+          class="person-photo"
+          src="https://i.scdn.co/image/ab67706c0000da84b666527e0249fef0a46d6858"
+          alt="Midori">
+
+        <div class="card-content">
+
+          <h2>Midori Gurinishi, 18</h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type friendship">
+            Friendship
+          </span>
+
+          <div class="status">
+            ● Online now
+          </div>
+
+          <p class="bio">
+            Foodie, gamer and fandom enthusiast.
+            Our world is a game, I think.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Games
+            </span>
+
+            <span class="tag">
+              Friends
+            </span>
+
+            <span class="tag">
+              Food
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="message"
+              onclick="message('Midori')">
+
+              Message
+
+            </button>
+
+            <button
+              class="view"
+              onclick="viewProfile('Midori')">
+
+              Profile
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONNECTION 2 -->
+
+      <div class="connection-card">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/originals/61/ea/fe/61eafe22d10e41542649ade392b7d8f2.jpg"
+          alt="Info-chan">
+
+        <div class="card-content">
+
+          <h2>Info-chan, 18</h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type friendship">
+            Friendship
+          </span>
+
+          <div class="status">
+            ● Online now
+          </div>
+
+          <p class="bio">
+            Coding lover, hacker and programmer.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Coding
+            </span>
+
+            <span class="tag">
+              Hacking
+            </span>
+
+            <span class="tag">
+              Programming
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="message"
+              onclick="message('Info-chan')">
+
+              Message
+
+            </button>
+
+            <button
+              class="view"
+              onclick="viewProfile('Info-chan')">
+
+              Profile
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- CONNECTION 3 -->
+
+      <div class="connection-card">
+
+        <img
+          class="person-photo"
+          src="https://tse1.mm.bing.net/th/id/OIP.h0zJBtYU0T8oa9lZo6R6kAHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
+          alt="Kokona">
+
+        <div class="card-content">
+
+          <h2>Kokona Harukawa, 18</h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type friendship">
+            Friendship
+          </span>
+
+          <div class="status">
+            ● Online now
+          </div>
+
+          <p class="bio">
+            Actress and haning out lover looking for
+            people to be friends with.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Drama
+            </span>
+
+            <span class="tag">
+              Actress
+            </span>
+
+            <span class="tag">
+              Design
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="message"
+              onclick="message('Taylor')">
+
+              Message
+
+            </button>
+
+            <button
+              class="view"
+              onclick="viewProfile('Taylor')">
+
+              Profile
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function message(name) {
+      alert("Opening your conversation with " + name);
+    }
+
+    function viewProfile(name) {
+      alert("Opening " + name + "'s profile");
+    }
+
+  </script>
+
+</body>
+
+</html>

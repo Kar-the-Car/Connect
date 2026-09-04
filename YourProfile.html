@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Connect — Your Profile</title>
+
+   <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a
+      href="index.html"
+      class="logo">
+
+      Connect
+
+    </a>
+
+
+    <div class="nav-links">
+
+      <a href="connections.html">
+        Connections
+      </a>
+
+      <a href="recommendations.html">
+        Recommendations
+      </a>
+
+      <a href="search.html">
+        Search
+      </a>
+
+      <a
+        href="profile.html"
+        class="active">
+
+        <img
+          class="profile-icon"
+          src="https://i.pinimg.com/originals/4c/8c/e5/4c8ce5524ce24545a4be893ed27d4e84.jpg?nii=t"
+          alt="Your profile">
+
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container">
+
+
+    <div class="page-title">
+
+      <h1>
+        Your Profile
+      </h1>
+
+      <p>
+        Manage your profile and how other people see you.
+      </p>
+
+    </div>
+
+
+    <div class="profile-layout">
+
+
+      <!-- PROFILE PREVIEW -->
+
+      <aside class="profile-card">
+
+        <img
+          class="profile-photo"
+          src="https://i.pinimg.com/originals/4c/8c/e5/4c8ce5524ce24545a4be893ed27d4e84.jpg?nii=t"
+          alt="Your profile photo">
+
+
+        <h2>
+          Ayano Aishi
+        </h2>
+
+
+        <div class="profile-location">
+          18 · Japan
+        </div>
+
+
+        <span class="connection-type">
+          Friendship or Dating
+        </span>
+
+
+        <!-- PROFILE STATS -->
+
+        <div class="stats">
+
+
+          <div class="stat">
+
+            <strong>
+              20
+            </strong>
+
+            <span>
+              Connections
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              15
+            </strong>
+
+            <span>
+              Interests
+            </span>
+
+          </div>
+
+
+          <div class="stat">
+
+            <strong>
+              95%
+            </strong>
+
+            <span>
+              Complete
+            </span>
+
+          </div>
+
+
+        </div>
+
+      </aside>
+
+
+      <!-- EDIT PROFILE -->
+
+      <section class="edit-card">
+
+        <h2>
+          Edit Your Profile
+        </h2>
+
+
+        <form
+          onsubmit="saveProfile(event)">
+
+
+          <!-- NAME -->
+
+          <div class="form-group">
+
+            <label for="name">
+              Name
+            </label>
+
+            <input
+              id="name"
+              type="text"
+              value="Ayano Aishi"
+              required>
+
+          </div>
+
+
+          <!-- AGE -->
+
+          <div class="form-group">
+
+            <label for="age">
+              Age
+            </label>
+
+            <input
+              id="age"
+              type="number"
+              value="18"
+              required>
+
+          </div>
+
+
+          <!-- LOCATION -->
+
+          <div class="form-group">
+
+            <label for="location">
+              Location
+            </label>
+
+            <input
+              id="location"
+              type="text"
+              value="Japan"
+              required>
+
+          </div>
+
+
+          <!-- CONNECTION TYPE -->
+
+          <div class="form-group">
+
+            <label for="connectionType">
+              I'm interested in
+            </label>
+
+            <select id="connectionType">
+
+              <option>
+                Friendship or Dating
+              </option>
+
+              <option>
+                Friendship
+              </option>
+
+              <option>
+                Dating
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <!-- BIO -->
+
+          <div class="form-group">
+
+            <label for="bio">
+              About Me
+            </label>
+
+            <textarea id="bio">I'm a student at Akademi High. I'd like to know you but I'm quite shy</textarea>
+
+          </div>
+
+
+          <!-- INTERESTS -->
+
+          <div class="form-group">
+
+            <label for="interests">
+              Interests
+            </label>
+
+            <input
+              id="interests"
+              type="text"
+              value="Gaming, Staying home, Studying"
+              placeholder="Gaming, Staying home, Studying...">
+
+          </div>
+
+
+          <!-- SAVE -->
+
+          <button
+            type="submit"
+            class="save-button">
+
+            Save Changes
+
+          </button>
+
+
+        </form>
+
+
+        <!-- ACCOUNT -->
+
+        <div class="danger-zone">
+
+          <h3>
+            Account
+          </h3>
+
+          <p>
+            Permanently delete your account and profile.
+          </p>
+
+          <button
+            class="delete-button"
+            onclick="deleteAccount()">
+
+            Delete Account
+
+          </button>
+
+        </div>
+
+
+      </section>
+
+    </div>
+
+  </main>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function saveProfile(event) {
+
+      event.preventDefault();
+
+      alert(
+        "Your profile has been saved!"
+      );
+
+    }
+
+
+    function deleteAccount() {
+
+      const confirmed =
+        confirm(
+          "Are you sure you want to delete your account?"
+        );
+
+
+      if (confirmed) {
+
+        alert(
+          "Account deletion would happen here."
+        );
+
+      }
+
+    }
+
+  </script>
+
+</body>
+
+</html>

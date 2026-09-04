@@ -1,0 +1,1468 @@
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  color: #6948ff;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6948ff;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 25px;
+}
+
+.page-title {
+  margin-bottom: 35px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.page-title p {
+  color: #777;
+}
+
+
+/* ========================================
+   CONNECTION GRID
+======================================== */
+
+.connections-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(270px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* ========================================
+   CONNECTION CARD
+======================================== */
+
+.connection-card {
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition: transform 0.2s ease,
+              box-shadow 0.2s ease;
+}
+
+.connection-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.person-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h2 {
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+
+/* ========================================
+   CONNECTION TYPE
+======================================== */
+
+.type {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  margin-bottom: 12px;
+}
+
+.friendship {
+  background: #e5f8ed;
+  color: #18864c;
+}
+
+.dating {
+  background: #ffe7ef;
+  color: #d6336c;
+}
+
+.both {
+  background: #eee9ff;
+  color: #6245dd;
+}
+
+
+/* ========================================
+   ONLINE STATUS
+======================================== */
+
+.status {
+  color: #18a65b;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+
+/* ========================================
+   BIO
+======================================== */
+
+.bio {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+
+/* ========================================
+   TAGS
+======================================== */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 18px;
+}
+
+.tag {
+  background: #f0edff;
+  color: #6245dd;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+
+  padding: 12px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  flex: 1;
+}
+
+.message {
+  background: #6948ff;
+  color: white;
+}
+
+.message:hover {
+  background: #5638e8;
+}
+
+.view {
+  background: #eeeef4;
+  color: #444;
+}
+
+.view:hover {
+  background: #e2e2eb;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 35px 20px;
+  }
+
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+}
+
+
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+  height: 70px;
+  background: white;
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  color: #6948ff;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6948ff;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 25px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.page-title p {
+  color: #777;
+}
+
+
+/* ========================================
+   RECOMMENDATION BANNER
+======================================== */
+
+.banner {
+  background:
+    linear-gradient(
+      135deg,
+      #6948ff,
+      #947cff
+    );
+
+  color: white;
+
+  padding: 30px;
+
+  border-radius: 18px;
+
+  margin-bottom: 35px;
+}
+
+.banner h2 {
+  margin-bottom: 8px;
+}
+
+.banner p {
+  opacity: 0.9;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.recommendations-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(270px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* ========================================
+   PERSON CARD
+======================================== */
+
+.person-card {
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.person-photo {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+/* ========================================
+   MATCH SCORE
+======================================== */
+
+.match {
+  display: inline-block;
+
+  background: #e5f8ed;
+  color: #16864d;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+
+/* ========================================
+   TEXT
+======================================== */
+
+.content h2 {
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+
+/* ========================================
+   CONNECTION TYPE
+======================================== */
+
+.type {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+.friendship {
+  background: #e5f8ed;
+  color: #18864c;
+}
+
+.dating {
+  background: #ffe7ef;
+  color: #d6336c;
+}
+
+.both {
+  background: #eee9ff;
+  color: #6245dd;
+}
+
+
+/* ========================================
+   BIO
+======================================== */
+
+.bio {
+  color: #666;
+
+  line-height: 1.5;
+
+  margin-bottom: 15px;
+}
+
+
+/* ========================================
+   TAGS
+======================================== */
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+}
+
+.tag {
+  background: #f0edff;
+  color: #6245dd;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+
+  border: none;
+
+  border-radius: 9px;
+
+  padding: 12px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.connect {
+  background: #6948ff;
+  color: white;
+}
+
+.connect:hover {
+  background: #5638e8;
+}
+
+.view {
+  background: #eeeef4;
+  color: #444;
+}
+
+.view:hover {
+  background: #e2e2eb;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 35px 20px;
+  }
+
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+}
+
+
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+  height: 70px;
+  background: white;
+
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  color: #6948ff;
+
+  font-size: 25px;
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #555;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6948ff;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+.container {
+  max-width: 1200px;
+
+  margin: auto;
+
+  padding: 50px 25px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+
+  margin-bottom: 8px;
+}
+
+.page-title p {
+  color: #777;
+}
+
+
+/* ========================================
+   SEARCH BOX
+======================================== */
+
+.search-box {
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+
+  margin-bottom: 35px;
+}
+
+
+/* ========================================
+   SEARCH INPUT
+======================================== */
+
+#searchInput {
+  width: 100%;
+
+  padding: 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 16px;
+
+  margin-bottom: 15px;
+}
+
+#searchInput:focus {
+  border-color: #6948ff;
+
+  box-shadow:
+    0 0 0 3px rgba(105, 72, 255, 0.10);
+}
+
+
+/* ========================================
+   FILTERS
+======================================== */
+
+.filters {
+  display: flex;
+
+  gap: 12px;
+
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 12px 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 9px;
+
+  background: white;
+
+  color: #444;
+
+  cursor: pointer;
+
+  outline: none;
+}
+
+select:focus {
+  border-color: #6948ff;
+}
+
+
+/* ========================================
+   SEARCH RESULTS
+======================================== */
+
+.results {
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(270px, 1fr));
+
+  gap: 25px;
+}
+
+
+/* ========================================
+   PERSON CARD
+======================================== */
+
+.person-card {
+  background: white;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.06);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.person-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.10);
+}
+
+.person-photo {
+  width: 100%;
+  height: 250px;
+
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+/* ========================================
+   PERSON INFORMATION
+======================================== */
+
+.content h2 {
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #888;
+
+  font-size: 14px;
+
+  margin-bottom: 12px;
+}
+
+
+/* ========================================
+   CONNECTION TYPE
+======================================== */
+
+.type {
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+.friendship {
+  background: #e5f8ed;
+  color: #18864c;
+}
+
+.dating {
+  background: #ffe7ef;
+  color: #d6336c;
+}
+
+.both {
+  background: #eee9ff;
+  color: #6245dd;
+}
+
+
+/* ========================================
+   BIO
+======================================== */
+
+.bio {
+  color: #666;
+
+  line-height: 1.5;
+
+  margin-bottom: 15px;
+}
+
+
+/* ========================================
+   TAGS
+======================================== */
+
+.tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 18px;
+}
+
+.tag {
+  background: #f0edff;
+
+  color: #6245dd;
+
+  padding: 6px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   VIEW PROFILE BUTTON
+======================================== */
+
+.view-button {
+  width: 100%;
+
+  padding: 12px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #6948ff;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.view-button:hover {
+  background: #5638e8;
+}
+
+
+/* ========================================
+   NO RESULTS
+======================================== */
+
+.no-results {
+  display: none;
+
+  text-align: center;
+
+  padding: 60px;
+
+  color: #777;
+}
+
+.no-results h2 {
+  color: #333;
+
+  margin-bottom: 10px;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 35px 20px;
+  }
+
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+}
+
+
+
+/* ========================================
+   GLOBAL
+======================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7fb;
+  color: #222;
+}
+
+
+/* ========================================
+   NAVIGATION
+======================================== */
+
+.navbar {
+  height: 70px;
+
+  background: white;
+
+  border-bottom: 1px solid #eee;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding: 0 7%;
+}
+
+.logo {
+  color: #6948ff;
+
+  font-size: 25px;
+
+  font-weight: bold;
+
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+}
+
+.nav-links a {
+  color: #555;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #6948ff;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+}
+
+
+/* ========================================
+   MAIN
+======================================== */
+
+.container {
+  max-width: 1100px;
+
+  margin: auto;
+
+  padding: 50px 25px;
+}
+
+.page-title {
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  font-size: 36px;
+
+  margin-bottom: 8px;
+}
+
+.page-title p {
+  color: #777;
+}
+
+
+/* ========================================
+   PROFILE LAYOUT
+======================================== */
+
+.profile-layout {
+  display: grid;
+
+  grid-template-columns: 300px 1fr;
+
+  gap: 30px;
+}
+
+
+/* ========================================
+   CARDS
+======================================== */
+
+.profile-card,
+.edit-card {
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 30px;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ========================================
+   PROFILE SIDEBAR
+======================================== */
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 170px;
+  height: 170px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  margin-bottom: 20px;
+}
+
+.profile-card h2 {
+  margin-bottom: 6px;
+}
+
+.profile-location {
+  color: #888;
+
+  margin-bottom: 15px;
+}
+
+
+/* ========================================
+   CONNECTION TYPE
+======================================== */
+
+.connection-type {
+  display: inline-block;
+
+  background: #eee9ff;
+
+  color: #6245dd;
+
+  padding: 7px 12px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  margin-bottom: 25px;
+}
+
+
+/* ========================================
+   PROFILE STATS
+======================================== */
+
+.stats {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  border-top: 1px solid #eee;
+
+  padding-top: 20px;
+}
+
+.stat strong {
+  display: block;
+
+  font-size: 20px;
+
+  margin-bottom: 4px;
+}
+
+.stat span {
+  color: #888;
+
+  font-size: 12px;
+}
+
+
+/* ========================================
+   EDIT PROFILE
+======================================== */
+
+.edit-card h2 {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+
+  font-weight: bold;
+
+  font-size: 14px;
+
+  margin-bottom: 7px;
+}
+
+
+/* ========================================
+   FORM ELEMENTS
+======================================== */
+
+input,
+textarea,
+select {
+  width: 100%;
+
+  padding: 13px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 9px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  background: white;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #6948ff;
+
+  box-shadow:
+    0 0 0 3px rgba(105, 72, 255, 0.10);
+}
+
+textarea {
+  min-height: 130px;
+
+  resize: vertical;
+}
+
+
+/* ========================================
+   SAVE BUTTON
+======================================== */
+
+.save-button {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #6948ff;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+.save-button:hover {
+  background: #5638e8;
+}
+
+
+/* ========================================
+   INTERESTS
+======================================== */
+
+.interests {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 10px;
+}
+
+.interest {
+  background: #f0edff;
+
+  color: #6245dd;
+
+  padding: 7px 11px;
+
+  border-radius: 20px;
+
+  font-size: 13px;
+}
+
+
+/* ========================================
+   DANGER ZONE
+======================================== */
+
+.danger-zone {
+  margin-top: 30px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #eee;
+}
+
+.danger-zone h3 {
+  color: #d33;
+
+  margin-bottom: 10px;
+}
+
+.danger-zone p {
+  color: #777;
+
+  margin-bottom: 15px;
+}
+
+.delete-button {
+  padding: 11px 16px;
+
+  border: none;
+
+  border-radius: 9px;
+
+  background: #fff0f0;
+
+  color: #d33;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background: #ffe0e0;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 800px) {
+
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 35px 20px;
+  }
+
+  .profile-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-card {
+    max-width: 500px;
+
+    width: 100%;
+
+    margin: auto;
+  }
+
+  .page-title h1 {
+    font-size: 30px;
+  }
+
+}

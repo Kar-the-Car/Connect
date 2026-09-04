@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Connect — Recommendations</title>
+
+   <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a href="index.html" class="logo">
+      Connect
+    </a>
+
+    <div class="nav-links">
+
+      <a href="connections.html">
+        Connections
+      </a>
+
+      <a
+        href="recommendations.html"
+        class="active">
+
+        Recommendations
+
+      </a>
+
+      <a href="search.html">
+        Search
+      </a>
+
+      <a href="profile.html">
+
+        <img
+          class="profile-icon"
+          src="https://i.pinimg.com/originals/4c/8c/e5/4c8ce5524ce24545a4be893ed27d4e84.jpg?nii=t"
+          alt="Your profile">
+
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container">
+
+    <div class="page-title">
+
+      <h1>
+        Recommendations
+      </h1>
+
+      <p>
+        People we think you might get along with.
+      </p>
+
+    </div>
+
+
+    <!-- RECOMMENDATION BANNER -->
+
+    <div class="banner">
+
+      <h2>
+        ✨ Recommended for you
+      </h2>
+
+      <p>
+        These recommendations are based on your
+        interests, location and connection preferences.
+      </p>
+
+    </div>
+
+
+    <!-- PEOPLE -->
+
+    <div class="recommendations-grid">
+
+
+      <!-- PERSON 1 -->
+
+      <div class="person-card">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/236x/e0/81/e2/e081e2a27972603741168903a1765fdf.jpg?nii=t"
+          alt="Taro">
+
+        <div class="content">
+
+          <span class="match">
+            94% Match
+          </span>
+
+          <h2>
+            Taro Yamada, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type both">
+            Friendship or Dating
+          </span>
+
+          <p class="bio">
+            Loves meeting new people, socializing and my family.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Social
+            </span>
+
+            <span class="tag">
+              Gaming
+            </span>
+
+            <span class="tag">
+              Searching
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="connect"
+              onclick="connect('Taro')">
+
+              Connect
+
+            </button>
+
+            <button
+              class="view"
+              onclick="view('Taro')">
+
+              View
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PERSON 2 -->
+
+      <div class="person-card">
+
+        <img
+          class="person-photo"
+          src="https://static.voicedub.ai/models/c3753718-4607-4820-b35f-f850ad7d1f74/c3753718-4607-4820-b35f-f850ad7d1f74.webp"
+          alt="Miyuji">
+
+        <div class="content">
+
+          <span class="match">
+            89% Match
+          </span>
+
+          <h2>
+            Miyuji Shibakoya, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type friendship">
+            Friendship
+          </span>
+
+          <p class="bio">
+            Music fan, casual gamer and huge fan of
+            playing in a band.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Music
+            </span>
+
+            <span class="tag">
+              Gaming
+            </span>
+
+            <span class="tag">
+              Guitarist
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="connect"
+              onclick="connect('Miyuji')">
+
+              Connect
+
+            </button>
+
+            <button
+              class="view"
+              onclick="view('Miyuji')">
+
+              View
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PERSON 3 -->
+
+      <div class="person-card">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/originals/3c/a9/6e/3ca96e406954c81a9c36074584fdf521.jpg"
+          alt="Musume">
+
+        <div class="content">
+
+          <span class="match">
+            85% Match
+          </span>
+
+          <h2>
+            Musume Ronshaku, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type both">
+            Friendship or Dating
+          </span>
+
+          <p class="bio">
+            Popular, gossip girl and fashionista.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Rich
+            </span>
+
+            <span class="tag">
+              Gossip
+            </span>
+
+            <span class="tag">
+              Fashion
+            </span>
+
+          </div>
+
+          <div class="buttons">
+
+            <button
+              class="connect"
+              onclick="connect('Musume')">
+
+              Connect
+
+            </button>
+
+            <button
+              class="view"
+              onclick="view('Musume')">
+
+              View
+
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function connect(name) {
+
+      alert(
+        "Connection request sent to "
+        + name
+        + "!"
+      );
+
+    }
+
+
+    function view(name) {
+
+      alert(
+        "Opening "
+        + name
+        + "'s profile..."
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>

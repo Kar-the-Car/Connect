@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Connect — Search</title>
+ <link rel="stylesheet" href="Style.css">
+
+</head>
+
+<body>
+
+
+  <!-- NAVIGATION -->
+
+  <nav class="navbar">
+
+    <a href="index.html" class="logo">
+      Connect
+    </a>
+
+    <div class="nav-links">
+
+      <a href="connections.html">
+        Connections
+      </a>
+
+      <a href="recommendations.html">
+        Recommendations
+      </a>
+
+      <a
+        href="search.html"
+        class="active">
+
+        Search
+
+      </a>
+
+      <a href="profile.html">
+
+        <img
+          class="profile-icon"
+          src="https://i.pinimg.com/originals/4c/8c/e5/4c8ce5524ce24545a4be893ed27d4e84.jpg?nii=t"
+          alt="Your profile">
+
+      </a>
+
+    </div>
+
+  </nav>
+
+
+  <!-- MAIN CONTENT -->
+
+  <main class="container">
+
+    <div class="page-title">
+
+      <h1>
+        Search People
+      </h1>
+
+      <p>
+        🔎Find people by name, interests, location,
+        or connection type.
+      </p>
+
+    </div>
+
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        id="searchInput"
+        type="text"
+        placeholder="Search names, hobbies, interests..."
+        oninput="searchPeople()">
+
+
+      <div class="filters">
+
+        <select
+          id="typeFilter"
+          onchange="searchPeople()">
+
+          <option value="all">
+            Any connection
+          </option>
+
+          <option value="friendship">
+            Friendship
+          </option>
+
+          <option value="dating">
+            Dating
+          </option>
+
+          <option value="both">
+            Friendship or Dating
+          </option>
+
+        </select>
+
+
+        <select
+          id="locationFilter"
+          onchange="searchPeople()">
+
+          <option value="all">
+            Any location
+          </option>
+
+          <option value="Asia">
+            Asia
+          </option>
+
+          <option value="Africa">
+            Africa
+          </option>
+
+          <option value="Europe">
+            Europe
+          </option>
+
+          <option value="South America">
+            South America
+          </option>
+
+          <option value="North America">
+            North America
+          </option>
+
+        </select>
+
+      </div>
+
+    </div>
+
+
+    <!-- SEARCH RESULTS -->
+
+    <div
+      id="results"
+      class="results">
+
+
+      <!-- OSANA -->
+
+      <div
+        class="person-card"
+        data-name="Osana"
+        data-interests="Cats Lunch Student"
+        data-location="Japan"
+        data-type="friendship">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/736x/c6/f7/64/c6f7641e01b81273ddb53b0af0d5f8f7.jpg"
+          alt="Osana">
+
+        <div class="content">
+
+          <h2>
+            Osana Najimi, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type friendship">
+            Friendship
+          </span>
+
+          <p class="bio">
+            Cat lover and eager to talk to people
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Cats
+            </span>
+
+            <span class="tag">
+              Lunch
+            </span>
+
+            <span class="tag">
+              Student
+            </span>
+
+          </div>
+
+          <button
+            class="view-button"
+            onclick="viewProfile('Osana')">
+
+            View Profile
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- AMAI -->
+
+      <div
+        class="person-card"
+        data-name="Amai"
+        data-interests="Cooking Baking Food"
+        data-location="Japan"
+        data-type="dating">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/736x/a5/b0/a5/a5b0a58856b25d4811a0fda0b671d9a8.jpg"
+          alt="Amai">
+
+        <div class="content">
+
+          <h2>
+            Amai Odayaka, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type dating">
+            Dating
+          </span>
+
+          <p class="bio">
+            Loves cooking, foodie, parents own a bakery
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Cooking
+            </span>
+
+            <span class="tag">
+              Baking
+            </span>
+
+            <span class="tag">
+              Food
+            </span>
+
+          </div>
+
+          <button
+            class="view-button"
+            onclick="viewProfile('Amai')">
+
+            View Profile
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- KIZANA -->
+
+      <div
+        class="person-card"
+        data-name="Kizana"
+        data-interests="Drama Performance Acting"
+        data-location="Japan"
+        data-type="both">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/736x/e7/f9/b9/e7f9b90bd5f9cf156390b5e58822eb5a.jpg"
+          alt="Kizana">
+
+        <div class="content">
+
+          <h2>
+            Kizana Sunobu, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type both">
+            Friendship or Dating
+          </span>
+
+          <p class="bio">
+            Drama club leader, actress and acting enthusiast.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Drama
+            </span>
+
+            <span class="tag">
+              Performance
+            </span>
+
+            <span class="tag">
+              Acting
+            </span>
+
+          </div>
+
+          <button
+            class="view-button"
+            onclick="viewProfile('Kizana')">
+
+            View Profile
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- OKA -->
+
+      <div
+        class="person-card"
+        data-name="Oka"
+        data-interests="Occult Supernatural Demons"
+        data-location="Japan"
+        data-type="both">
+
+        <img
+          class="person-photo"
+          src="https://i.pinimg.com/736x/a4/5e/b0/a45eb0474cdaa77dde6ef0d97a6c77b4.jpg"
+          alt="Oka">
+
+        <div class="content">
+
+          <h2>
+            Oka Ruto, 18
+          </h2>
+
+          <div class="location">
+            📍 Japan
+          </div>
+
+          <span class="type both">
+            Friendship or Dating
+          </span>
+
+          <p class="bio">
+            Occult club leader, interest demon and studies spells.
+          </p>
+
+          <div class="tags">
+
+            <span class="tag">
+              Occult
+            </span>
+
+            <span class="tag">
+              Supernatural
+            </span>
+
+            <span class="tag">
+              Demons
+            </span>
+
+          </div>
+
+          <button
+            class="view-button"
+            onclick="viewProfile('Oka')">
+
+            View Profile
+
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+
+    <div
+      id="noResults"
+      class="no-results">
+
+      <h2>
+        No people found
+      </h2>
+
+      <p>
+        Try changing your search or filters.
+      </p>
+
+    </div>
+
+  </main>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    function searchPeople() {
+
+      const search =
+        document
+          .getElementById("searchInput")
+          .value
+          .toLowerCase();
+
+
+      const type =
+        document
+          .getElementById("typeFilter")
+          .value;
+
+
+      const location =
+        document
+          .getElementById("locationFilter")
+          .value;
+
+
+      const people =
+        document.querySelectorAll(
+          ".person-card"
+        );
+
+
+      let visiblePeople = 0;
+
+
+      people.forEach(person => {
+
+        const name =
+          person.dataset.name;
+
+        const interests =
+          person.dataset.interests;
+
+        const personType =
+          person.dataset.type;
+
+        const personLocation =
+          person.dataset.location;
+
+
+        const matchesSearch =
+          name.includes(search) ||
+          interests.includes(search);
+
+
+        const matchesType =
+          type === "all" ||
+          personType === type;
+
+
+        const matchesLocation =
+          location === "all" ||
+          personLocation === location;
+
+
+        if (
+          matchesSearch &&
+          matchesType &&
+          matchesLocation
+        ) {
+
+          person.style.display = "block";
+
+          visiblePeople++;
+
+        } else {
+
+          person.style.display = "none";
+
+        }
+
+      });
+
+
+      document.getElementById(
+        "noResults"
+      ).style.display =
+        visiblePeople === 0
+          ? "block"
+          : "none";
+
+    }
+
+
+    function viewProfile(name) {
+
+      alert(
+        "Opening "
+        + name
+        + "'s profile..."
+      );
+
+    }
+
+  </script>
+
+</body>
+
+</html>
