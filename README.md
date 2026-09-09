@@ -1,3 +1,6 @@
+<h1>Connect</h1>
+<h3>Meeting others who are like you, both friends and partners alike</h3>
+
 <nav>
   <ul>
   <li><a href="Connections.html" class="active">Connections you've made here</a></li>
