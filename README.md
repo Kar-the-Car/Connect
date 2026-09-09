@@ -11,10 +11,11 @@
 </body>
 
   <nav class="navbar">
-      <a href="Connections.html" class="active">Connections</a>
+      <a href="Connections.html" class="active">Connections you've made</a>
 
-      <a href="Recommendations.html" class="active">Recommendations</a>
+      <a href="Recommendations.html" class="active">Recommended people for you</a>
 
       <a href="Search.html" class="active">Search</a>
 
       <a href="YourProfile.html" class="active">Your Profile</a>
+</nav>
