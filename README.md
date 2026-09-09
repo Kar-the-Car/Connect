@@ -10,12 +10,6 @@
   <h1>Connect</h1>
 </body>
 
-  <nav class="navbar">
-      <a href="Connections.html" class="active">Connections you've made</a>
-
-      <a href="Recommendations.html" class="active">Recommended people for you</a>
-
-      <a href="Search.html" class="active">Search</a>
-
-      <a href="YourProfile.html" class="active">Your Profile</a>
-</nav>
+<nav class="navbar">
+      <a href="Connections.html" class="active">Connections</a>
+  </nav>
